@@ -1,0 +1,29 @@
+{% load static %}
+
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>LISTE DES RECETTES</title>
+</head>
+<h1>LISTE DES RECETTES</h1>
+<link rel="stylesheet" href="{% static 'library/image/style.css' %}">
+
+<body>
+</div>
+
+    <div class="recettes_list">
+            <ul class="recette_list_item">
+            {% for recette in recettes %}
+
+            <li>{{ recette.titre }}</li>
+
+            {% endfor %}
+
+            </ul>
+
+
+    </div>
+
+</body>
+</html>
