@@ -1,10 +1,16 @@
 body {
-    padding: 20px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url("menu_image/background2.jpeg") no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    padding: 50px;
     font_weight: bold;
     font-size: 20px;
     margin: 30px 0px;
     font-family : arial;
 }
+
 
 h1 {
     background-color: #EBC0A9;
@@ -16,6 +22,26 @@ h1 {
 
 }
 
+h2  {
+    background-color: #544841;
+    color: white;
+    display: block;
+    padding: 20px 20px;
+    text-align: center;
+    margin-left : 300px;
+    margin-right:300px;
+
+}
+
 .recette_list_item {
     list_style_type : square;
+    margin-right : 700px;
+    font-size: 30px;
+
+}
+
+.photo {
+
+   text-align: center;
+
 }

@@ -20,6 +20,11 @@ class Recettes (models.Model):
     titre = models.CharField(max_length=100)
     categorie = models.CharField(max_length=25, blank=True, choices=GENRES)
     slug= models.SlugField(blank=True)
+    youtube= models.CharField(max_length=200, blank=True)
+    canva = models.CharField(max_length=200, blank=True)
+    photo = models.CharField(max_length=200, blank=True)
+
+
 
     def save(self, *args, **kwargs):
         if not self.slug:

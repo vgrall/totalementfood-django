@@ -15,8 +15,8 @@
     <div class="recettes_list">
             <ul class="recette_list_item">
             {% for recette in recettes %}
-
-            <li>{{ recette.titre }}</li>
+                <li><a href="{% url 'liste_recettes:fiche_recette' recette.id %}">{{recette.titre}}</a></li>
+                <br>
 
             {% endfor %}
 
