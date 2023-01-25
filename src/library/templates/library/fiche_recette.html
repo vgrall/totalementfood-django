@@ -18,7 +18,7 @@
 
 <a href="{{recette.canva}}">LA RECETTE DÉTAILLÉE</a>
 <br><br>
-<form action="/recettes/{{fiche_recette.id}}" method="POST">
+<form action="/recettes/{{recette.id}}/" method="POST">
 
     {% csrf_token %}
 

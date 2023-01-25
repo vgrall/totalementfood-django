@@ -11,8 +11,9 @@ def liste_recettes(request):
 def fiche_recette(request, recettes_id):
     print("hello" +request.method)
 
+
     if request.method == "POST":
-        ficherecette = Recettes.objects.get (pk=recettes_id)
+        ficherecette = Recettes.objects.get(pk=recettes_id)
 
         ficherecette.delete()
 
