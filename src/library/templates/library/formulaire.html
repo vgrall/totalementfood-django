@@ -1,0 +1,31 @@
+{% load static %}
+
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULAIRE</title>
+</head>
+<h1>Formulaire de saisie</h1>
+<link rel="stylesheet" href="{% static 'library/image/style.css' %}">
+
+<body>
+<div class="formulaire">
+
+  <form class="action" action="/recettes/form" method="post">
+
+      {% csrf_token %}
+      {{formulaire}}
+
+      <br> <br>
+      <input type="submit" value="Submit">
+      <br><br>
+
+
+
+
+  </form>
+</div>
+
+</body>
+</html>

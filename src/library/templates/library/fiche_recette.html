@@ -13,8 +13,23 @@
 
 <h2>{{recette.titre}}</h2>
 <a href="{{recette.youtube}}" >LA VIDÉO DU PAS À PAS</a>
+
 <br><br><br>
+
 <a href="{{recette.canva}}">LA RECETTE DÉTAILLÉE</a>
+<br><br>
+<form action="/recettes/{{fiche_recette.id}}" method="POST">
+
+    {% csrf_token %}
+
+        <button
+        type="submit">
+        Supprimer
+        </button>
+
+
+    </form>
+
 <tr><div class = "photo"><img class=img-responsive src="{{recette.photo}}" WIDTH=630 HEIGHT=450></div></tr>
 
 
